@@ -1,0 +1,56 @@
+
+:root {
+    --_fw-200: 200;
+    --_fw-700: 700;
+    --_fw-400: 400;
+  
+    /*   */
+    --_clr-900:#da4d07;
+    --_clr-700: #f1641e;
+    --_clr-400: #f6a379;
+  }
+.bubble-text {
+  /* font-size: clamp(2rem, calc(2rem + 3.5vw), 8rem); */
+  font-size: 48px;
+  color: #0a0a0a;
+  user-select: none;
+  /* display:inline-flex; */
+  cursor:crosshair;
+  /* cursor: url("../src/img/cat_paw.png"),  n-resize; */
+
+  &.split-text {
+    display: inline-block;
+    /* word-spacing: 5%; */
+  }
+
+  & .split-char {
+    font-weight: 620;
+    transition: font-weight 0.5s ease;
+
+    &:hover {
+      font-weight: var(--_fw-200);
+      color: var(--_clr-900);
+      
+    }
+
+    /* // right side */
+    &:hover + .split-char {
+      font-weight: var(--_fw-400);
+      color: var(--_clr-700);
+    }
+    &:hover + .split-char + .split-char {
+      font-weight: var(--_fw-700);
+      color: var(--_clr-400);
+    }
+
+    /* // left side */
+    &:has(+ .split-char:hover) {
+      font-weight: var(--_fw-700);
+      color: var(--_clr-700);
+    }
+    &:has(+ .split-char + .split-char:hover) {
+      font-weight: var(--_fw-400);
+      color: var(--_clr-400);
+    }
+  }
+}

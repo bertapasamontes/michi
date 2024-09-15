@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    font-family:"Poppins";
+    /* background-color:white; */
+    margin:25px 50px;
+}
+
+.navbar-item:hover{
+    border-radius:25px;
+}
+
+
+#container{
+    margin:10% 0% 3% 3%;
+}
+
+
+.boton_descargar_1{
+    margin:0px 10px;
+}
+
+
+#container .columna2{
+    position: relative;
+
+    .wireframe {
+    margin-left: 0px;
+    margin-top: 55px;
+    }
+    
+    .wireframe2 {
+    margin-left: 200px;
+    position: absolute;
+    top: 0px;
+    }
+    
+    img{
+        transform: rotate(22.5deg);
+        width: 218px;
+    }
+}
+
+.boton_catalan:hover{
+  // background: linear-gradient(180deg, rgba(249,219,66,0.4431897759103641) 0%, rgba(249,219,66,0.44) 9%, rgba(237,53,33,0.44) 10%, rgba(237,53,33,0.44) 19%, rgba(249,219,66,1) 20%, rgba(249,219,66,1) 30%, rgba(237,53,33,1) 30%, rgba(237,53,33,1) 41%, rgba(249,219,66,1) 42%, rgba(249,219,66,1) 53%, rgba(237,53,33,1) 54%, rgba(237,53,33,1) 65%, rgba(249,219,66,1) 66%, rgba(249,219,66,1) 76%, rgba(237,53,33,1) 77%, rgba(237,53,33,1) 87%, rgba(249,219,66,1) 88%, rgba(249,219,66,1) 100%);
+  font-weight: 600;
+}
+
+.descargar{
+  background-color: #ed8942;
+  color: rgb(46, 46, 46);
+}
+
+.descargar:hover{
+  background-color: #ea7720;
+  color: rgb(249, 250, 252);
+}
+
+
+
+@keyframes bdBestCarousel {
+  to {
+      transform: translateX(calc(-100% + 3120px))
+  }
+}
+
+.bd-best{
+  background-color: var(--bulma-scheme-main);
+    height: calc(386px + 3rem);
+    overflow: hidden;
+    padding: 1.5rem 0;
+    position: relative;
+    border-color: #ea7720;
+}
+.bd-best-list{
+  align-items: stretch;
+    animation-duration: 93.6s;
+    animation-iteration-count: infinite;
+    animation-name: bdBestCarousel;
+    animation-timing-function: linear;
+    // display: flex;
+    left: 0;
+    // position: absolute;
+    top: 1.5rem;
+}
+.bd-best-list:hover{
+  animation-play-state: paused;
+}
+
+article{
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.bd-tw{
+  background-color: var(--bulma-scheme-main-bis);
+  border-radius: var(--bulma-radius-large);
+  flex-shrink: 0;
+  font-size: 1em;
+  padding: 1.25em;
+  text-align: left;
+}
+
+.bd-best-item{
+  flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 16px;
+    transition-duration: var(--bulma-duration);
+    transition-property: box-shadow, transform;
+    width: 504px;
+
+    &.bd-is-medium{
+      font-size: 1.125em;
+    }
+}
+
+.bd-best-item:hover{
+  box-shadow: 0 1em 1em rgba(0, 0, 0, .1);
+    transform: translateY(-.5em);
+}
+
+
+// inicio animación scroll
+@keyframes show {
+  from{
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to{
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.caracteristicas{
+  view-timeline-name: --caract;
+  //para decirle q se tiene q hacer la aniamción en ele eje y:
+  view-timeline-axis: block;
+
+  //mensaje para decirle al scroll q lo haga bien:
+  animation-timeline: --caract;
+  animation-name: show;
+
+  // mensaje para q se vea completamente bien  el div que se va mostrando antes de q llegue arriba del todo de la pagina:
+  // cuando el usuario ve el 25% del div, empeiza la animación y termina (cover) cuando se vea un 50%
+  animation-range-start: 25%;
+  animation-range-end: 75%;
+}

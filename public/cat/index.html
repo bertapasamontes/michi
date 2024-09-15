@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michi_v02</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="../../node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="../../node_modules/bulma/css/bulma.css.map">
+    <link rel="stylesheet" href="../../node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="../../node_modules/bulma/css/versions/bulma-no-dark-mode.css">
+    <link rel="stylesheet" href="../../css/style.scss">
+    <link rel="stylesheet" href="../../css/bubble-style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    
+
+</head>
+
+<body class="">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#"><img src="../../src/img/logo_v02.png"
+                    alt="log michi"><b>MICHI</b></a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end is-centered">
+                <a class="navbar-item">Components</a>
+                <a class="navbar-item">Sobre nosaltres</a>
+                <a class="navbar-item">Contacte</a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item dropdown is-active">
+                    <div class="dropdown-trigger">
+                      <!-- <button class="button change" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <img src="../../src/img/idioma.svg" alt="idiomas_querida"><span>CAT</span>
+                        
+                      </button> -->
+                      <button class="change button" data-language="es">ES</button>
+                    </div>
+                    <!-- <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                      <div class="dropdown-content">
+                        <label class="label_idioma"><input type="checkbox" name="idioma" class="change">Castellà</label>
+                      </div>
+                    </div> -->
+                  </div>
+                <div class="navbar-item">
+                    <div class="buttons"><a class="button is-primary"><strong>Descarregar Michi</strong></a></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="container" class="columns is-desktop">
+        <div class="column columna1 is-align-items-baseline pt-auto is-half">
+            <!-- <h1 class="subtitle is-1 has-text-black"><b>Compara preus i estalvia</b></h1> -->
+            <div class=""><h1 class="subtitle bubble-text text is-flex-fullhd-only">Compara preus i estalvia</h1></div>
+            
+            <p class="subtitle is-4">Encuentra las mejores gangas relación calidad-precio y disfruta de códigos de
+                descuento.</p>
+            <div class="buttons is-inline-flex"><a
+                    class="boton-descargar_1 button is-primary mgh-small"><strong>Descargar Michi</strong></a></div>
+            <a href="">Acerca de Michi &#x2192</a>
+        </div>
+        <div class="column columna2">
+            <img src="../../src/img/michi_wireframe.png" alt="wireframe" class="image wireframe">
+            <img src="../../src/img/michi_wireframe.png" alt="wireframe2" class="image wireframe2">
+        </div>
+    </section>
+    <section class="porque-michi section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h2 class="title is-2">¿Por qué es interesante Michi?</h2>
+                    <p class="body1">Sigue leyendo para descubrir por qué Michi es una app de ahorro simple,
+                        potente y segura
+                    </p>
+                </div>
+            </div>
+            <div class="bd-best">
+                <div class="bd-best-list">
+                    <article class="bd-tw bd-best-item bd-is-medium">hola</article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INICIO modelo 3d rechulón -->
+    <model-viewer src="../../src/3d/michi_v02.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="114.7deg 78.05deg 31.74m" field-of-view="30deg">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <!-- <button slot="ar-button" id="ar-button">
+            View in your space
+        </button> -->
+        <!-- <div id="ar-prompt">
+            <img src="ar_hand_prompt.png">
+        </div> -->
+      </model-viewer>  
+      <script src="../../src/3d/script.js"></script>
+      <!-- Loads <model-viewer> for browsers: -->
+      <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+
+    <!-- FIN modelo 3d rechulón -->
+     <script src="../../js/script.js"></script>
+     <script src="../../js/bubble-script.js"></script>
+</body>
+
+</html>

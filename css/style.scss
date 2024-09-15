@@ -67,7 +67,7 @@ body{
 
 .bd-best{
   background-color: var(--bulma-scheme-main);
-    height: calc(386px + 3rem);
+    // height: calc(386px + 3rem);
     overflow: hidden;
     padding: 1.5rem 0;
     position: relative;
@@ -79,7 +79,7 @@ body{
     animation-iteration-count: infinite;
     animation-name: bdBestCarousel;
     animation-timing-function: linear;
-    // display: flex;
+    display: flex;
     left: 0;
     // position: absolute;
     top: 1.5rem;
@@ -113,6 +113,18 @@ article{
     &.bd-is-medium{
       font-size: 1.125em;
     }
+}
+
+.bd-best-item.bd-is-medium {
+  font-size: 1.125em
+}
+
+.bd-best-item.bd-is-large {
+  font-size: 1.25em
+}
+
+.bd-best-item.bd-is-huge {
+  font-size: 1.5em
 }
 
 .bd-best-item:hover{

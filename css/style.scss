@@ -6,7 +6,9 @@ body{
     /* background-color:white; */
     margin:25px 50px;
 }
-
+section{
+  margin: 5% 5% 0% 0%;
+}
 .navbar-item:hover{
     border-radius:25px;
 }
@@ -16,10 +18,6 @@ body{
     margin:10% 0% 3% 3%;
 }
 
-
-.boton_descargar_1{
-    margin:0px 10px;
-}
 
 
 #container .columna2{
@@ -39,6 +37,7 @@ body{
     img{
         transform: rotate(22.5deg);
         width: 218px;
+        border-radius: 27px;
     }
 }
 
@@ -47,14 +46,25 @@ body{
   font-weight: 600;
 }
 
+
+/*boton descargar*/
 .descargar{
-  background-color: #ed8942;
-  color: rgb(46, 46, 46);
+  background-color: #f5973d;
+  color: rgb(249, 250, 252);
 }
 
 .descargar:hover{
-  background-color: #ea7720;
-  color: rgb(249, 250, 252);
+  background-color: #f8ceb9;
+  color: #f08018;
+}
+
+.boton-secundario{
+  background-color: #ffffff;
+  color: #121212;
+}
+.boton-secundario:hover{
+  background-color: #f8ceb9;
+  color: #f08018;
 }
 
 
@@ -75,7 +85,7 @@ body{
 }
 .bd-best-list{
   align-items: stretch;
-    animation-duration: 93.6s;
+    animation-duration: 43.6s;
     animation-iteration-count: infinite;
     animation-name: bdBestCarousel;
     animation-timing-function: linear;
@@ -133,6 +143,25 @@ article{
 }
 
 
+
+/*CTA*/
+.cta .imagen-cta .image img{
+  width: 25%;
+  justify-content: flex-end;
+  filter: drop-shadow(5px 5px 0.5px white) drop-shadow(-5px -5px 0.5px white) drop-shadow(-5px 5px 0.5px white) drop-shadow(5px -5px 0.5px white);
+}
+
+.call-to-action .cta{
+  background-color: #308446;
+  justify-items: center;
+}
+
+.titulo-cta{
+  font-weight: 400;
+}
+
+
+/*DE QUE DISPONE MICHI*/
 .cajita{
   display: block;
     flex-basis: 0;
@@ -149,7 +178,26 @@ article{
     padding: 30px;
 }
 
-// inicio animación scroll
+.cajita .box .image img{
+  /*width: 25%;
+  justify-content: center;
+  border: #a09d9a solid 2px;*/
+  border-radius: 25px;
+  margin-bottom: 5%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.texto-centrado{
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+/*inicio animación scroll*/
 @keyframes show {
   from{
     opacity: 0;
@@ -162,17 +210,22 @@ article{
   }
 }
 
-.caracteristicas{
+.animacion-scroll{
   view-timeline-name: --caract;
-  //para decirle q se tiene q hacer la aniamción en ele eje y:
+  /*para decirle q se tiene q hacer la aniamción en ele eje y:*/
   view-timeline-axis: block;
 
-  //mensaje para decirle al scroll q lo haga bien:
+  /*mensaje para decirle al scroll q lo haga bien:*/
   animation-timeline: --caract;
   animation-name: show;
 
-  // mensaje para q se vea completamente bien  el div que se va mostrando antes de q llegue arriba del todo de la pagina:
-  // cuando el usuario ve el 25% del div, empeiza la animación y termina (cover) cuando se vea un 50%
-  animation-range-start: 25%;
-  animation-range-end: 75%;
+  /*mensaje para q se vea completamente bien  el div que se va mostrando antes de q llegue arriba del todo de la pagina:
+  cuando el usuario ve el 25% del div, empeiza la animación y termina (cover) cuando se vea un 50%*/
+  animation-range-start: 0%;
+  animation-range-end: 45%;
+}
+
+.footer{
+  border-radius: 25px;
+  align-items: baseline;
 }

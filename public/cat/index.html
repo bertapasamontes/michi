@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../node_modules/bulma/css/bulma.css.map">
     <link rel="stylesheet" href="../../node_modules/bulma/css/bulma.min.css">
     <link rel="stylesheet" href="../../node_modules/bulma/css/versions/bulma-no-dark-mode.css">
-    <link rel="stylesheet" href="../../css/style.scss">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/bubble-style.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     
@@ -39,23 +39,27 @@
                 <a class="navbar-item">Contacte</a>
             </div>
             <div class="navbar-end">
-                <div class="navbar-item dropdown is-active">
-                    <div class="dropdown-trigger">
-                      <!-- <button class="button change" aria-haspopup="true" aria-controls="dropdown-menu">
-                        <img src="../../src/img/idioma.svg" alt="idiomas_querida"><span>CAT</span>
-                        
-                      </button> -->
-                      <button class="change button" data-language="es">ES</button>
-                    </div>
-                    <!-- <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                      <div class="dropdown-content">
-                        <label class="label_idioma"><input type="checkbox" name="idioma" class="change">Castellà</label>
-                      </div>
-                    </div> -->
-                  </div>
                 <div class="navbar-item">
-                    <div class="buttons"><a class="button is-primary"><strong>Descarregar Michi</strong></a></div>
+                    <!-- <div class="dropdown-trigger"> -->
+                    <!-- <button class="button change" data-language="cat">
+                    <img src="../src/img/idioma.svg" alt="catalan"><span>CAT</span>
+                </button> -->
+                    <button class="change button boton_catalan" data-language="es">ES</button>
+                    <!-- <button class="change button" data-language="es">ES</button> -->
+                    <!-- <button class="button change" data-language="es">
+                <img src="../src/img/idioma.svg" alt="español"><span>ES</span>
+                </button> -->
                 </div>
+
+                <!-- </div> -->
+                <!-- <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                  <div class="dropdown-content">
+                    <label class="label_idioma"><input type="checkbox" name="idioma" class="change">Català</label>
+                  </div>
+                </div> -->
+            </div>
+            <div class="navbar-item">
+                <button class="button is-primary descargar">Descargar Michi</button>
             </div>
         </div>
     </nav>
@@ -64,43 +68,23 @@
             <!-- <h1 class="subtitle is-1 has-text-black"><b>Compara preus i estalvia</b></h1> -->
             <div class=""><h1 class="subtitle bubble-text text is-flex-fullhd-only">Compara preus i estalvia</h1></div>
             
-            <p class="subtitle is-4">Encuentra las mejores gangas relación calidad-precio y disfruta de códigos de
-                descuento.</p>
-            <div class="buttons is-inline-flex"><a
-                    class="boton-descargar_1 button is-primary mgh-small"><strong>Descargar Michi</strong></a></div>
-            <a href="">Acerca de Michi &#x2192</a>
+            <p class="subtitle is-4">Troba les millors gangues relació qualitat-preu y gaudeix de codis de descompte.</p>
+            <button class="button is-primary descargar">Descarregar Michi</button>
+            <button class="button is-primary boton-secundario">Sobre Michi &#x2192</button>
         </div>
         <div class="column columna2">
             <img src="../../src/img/michi_wireframe.png" alt="wireframe" class="image wireframe">
             <img src="../../src/img/michi_wireframe.png" alt="wireframe2" class="image wireframe2">
         </div>
     </section>
-    <section id="container" class="columns is-desktop"></section>
-        <div class="column columna1 is-align-items-baseline pt-auto is-half">
-            <!-- <h1 class="subtitle is-1 has-text-black"><b>Compara precios y ahorra</b></h1> -->
-            <div class="">
-                <h1 class="subtitle bubble-text text is-flex-fullhd-only">Compara precios <br> y ahorra</h1>
-            </div>
-            <br>
-            <p class="subtitle is-4">Encuentra las mejores gangas relación calidad-precio y disfruta de códigos de
-                descuento.</p>
-            <button class="button is-primary descargar">Descargar Michi</button>
-            <button class="button is-primary boton-secundario">Acerca de Michi &#x2192</button>
-        </div>
-        <div class="column columna2">
-            <img src="../src/img/mapa_prototipo_v02.png" alt="wireframe" class="image wireframe">
-            <img src="../src/img/lista_prototipo_v02.png" alt="wireframe2" class="image wireframe2">
-        </div>
 
-    </section>
     <br>
     <section class="porque-michi section animacion-scroll">
         <div class="container">
             <div class="columns is-centered">
                 <div class="column has-text-centered">
-                    <h2 class="title is-2">¿Por qué es interesante Michi?</h2>
-                    <p class="body1">Sigue leyendo para descubrir por qué Michi es una app de ahorro simple,
-                        potente y segura
+                    <h2 class="title is-2">Per què és interessant Michi?</h2>
+                    <p class="body1">Segeuix llegint per descobrir per què Michi és una app d'estalvi simple, potent i segura
                     </p>
                 </div>
             </div>
@@ -109,20 +93,20 @@
                     <div class="bd-best ">
                         <div class="bd-best-list is-inline-flex">
                             <article class="bd-tw bd-best-item bd-is-medium">
-                                <p>Tiene un buscador que te encuentra gangas</p>
+                                <p>Té un buscador que troba gangues</p>
                             </article>
                             <article class="bd-tw bd-best-item bd-is-medium">
-                                <p>Un mapa de los mejores sitios según las opiniones de los usuarios</p>
+                                <p>Un mapa dels millos llocs segons les opinions dels usuaris.</p>
                             </article>
                             <div class="bd-tw bd-best-item bd-is-medium">
-                                <p>¡Tu opinión también cuenta!Valora el producto en específico o al restaurante/bar</p>
+                                <p>La teva opinió també compta! Valora el producte específic o l'establiment.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="column auto">
                     <!-- INICIO modelo 3d rechulón -->
-                    <model-viewer src="../src/3d/michi_v02.glb" ar ar-modes="webxr scene-viewer quick-look"
+                    <model-viewer src="../../src/3d/michi_v02.glb" ar ar-modes="webxr scene-viewer quick-look"
                         camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1"
                         camera-orbit="114.7deg 78.05deg 31.74m" field-of-view="30deg">
                         <div class="progress-bar hide" slot="progress-bar">
@@ -135,7 +119,7 @@
                             <img src="ar_hand_prompt.png">
                         </div> -->
                     </model-viewer>
-                    <script src="../src/3d/script.js"></script>
+                    <script src="../../src/3d/script.js"></script>
                     <!-- Loads <model-viewer> for browsers: -->
                     <script type="module"
                         src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
@@ -150,14 +134,13 @@
             <div class="box columns is-centerd cta">
                 <div class="column is-half">
                     <div class="">
-                        <p class="title is-3 has-text-white titulo-cta">¿Te animas a probarla?</p>
-                        <p class="subtitle is-6 mt-3 has-text-light">Descargate ahora Michi y disfruta de todas sus
-                            herramientas (y descuentos 👀)</p>
-                        <button class="button is-primary descargar">Descargar Michi</button>
+                        <p class="title is-3 has-text-white titulo-cta">T'animes a probar-la?</p>
+                        <p class="subtitle is-6 mt-3 has-text-light">Descarrega ara Michi i gaudeix de totes les seves eines (i descomptes 👀)</p>
+                        <button class="button is-primary descargar">Descarregar Michi</button>
                     </div>
                 </div>
                 <div class="column is-half imagen-cta">
-                    <figure class="image "><img src="../src/img/Michi-con-movil.png" alt="foto_michi"></figure>
+                    <figure class="image "><img src="../../src/img/Michi-con-movil.png" alt="foto_michi"></figure>
                 </div>
             </div>
         </div>
@@ -177,7 +160,7 @@
                     <div class="box is-inline-flex">
                         <div class="column is-two-fifths">
                             <figure class="image">
-                                <img src="../src/img/lista_prototipo.png" alt="lista_prototipo" class="foto_box">
+                                <img src="../../src/img/lista_prototipo.png" alt="lista_prototipo" class="foto_box">
                             </figure>
                         </div>
 
@@ -192,7 +175,7 @@
                     <div class="box is-inline-flex">
                         <div class="column is-two-fifths">
                             <figure class="image">
-                                <img src="../src/img/mapa_prototipo.png" alt="lista_prototipo" class="foto_box">
+                                <img src="../../src/img/mapa_prototipo.png" alt="lista_prototipo" class="foto_box">
                             </figure>
                         </div>
                         <div class="column auto texto-centrado">
@@ -208,7 +191,7 @@
                     <div class="box is-inline-flex">
                         <div class="column is-two-fifths">
                             <figure class="image">
-                                <img src="../src/img/michibot_prototipo.png" alt="lista_prototipo" class="foto_box">
+                                <img src="../../src/img/michibot_prototipo.png" alt="lista_prototipo" class="foto_box">
                             </figure>
                         </div>
                         <div class="column auto texto-centrado">
@@ -275,8 +258,8 @@
         <p class="has-text-centered">@Copyright Michi 2024</p>
     </footer>
 
-    <script src="../js/script.js"></script>
-    <script src="../js/bubble-script.js"></script>
+    <script src="../../js/script.js"></script>
+    <script src="../../js/bubble-script.js"></script>
 </body>
 
 </html>

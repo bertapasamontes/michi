@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michi: L'App d'estalviadors per estalviadors</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="../../node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="../../node_modules/bulma/css/bulma.css.map">
+    <link rel="stylesheet" href="../../node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="../../node_modules/bulma/css/versions/bulma-no-dark-mode.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/bubble-style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../../src/img/logo_v02-ico.ico">
+    
+
+</head>
+
+<body class="">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#"><img src="../../src/img/logo_v02.png"
+                    alt="log michi"><b>MICHI</b></a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end is-centered">
+                <a class="navbar-item">Components</a>
+                <a class="navbar-item">Sobre nosaltres</a>
+                <a class="navbar-item">Contacte</a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <!-- <div class="dropdown-trigger"> -->
+                    <!-- <button class="button change" data-language="cat">
+                    <img src="../src/img/idioma.svg" alt="catalan"><span>CAT</span>
+                </button> -->
+                    <button class="change button boton_catalan" data-language="es">ES</button>
+                    <!-- <button class="change button" data-language="es">ES</button> -->
+                    <!-- <button class="button change" data-language="es">
+                <img src="../src/img/idioma.svg" alt="español"><span>ES</span>
+                </button> -->
+                </div>
+
+                <!-- </div> -->
+                <!-- <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                  <div class="dropdown-content">
+                    <label class="label_idioma"><input type="checkbox" name="idioma" class="change">Català</label>
+                  </div>
+                </div> -->
+            </div>
+            <div class="navbar-item">
+                <button class="button is-primary descargar">Descarregar Michi</button>
+            </div>
+        </div>
+    </nav>
+    <section id="container" class="columns is-desktop">
+        <div class="column columna1 is-align-items-baseline pt-auto is-half">
+            <!-- <h1 class="subtitle is-1 has-text-black"><b>Compara preus i estalvia</b></h1> -->
+            <div class=""><h1 class="subtitle bubble-text text is-flex-fullhd-only">Compara preus i estalvia</h1></div>
+            
+            <p class="subtitle is-4">Troba les millors gangues relació qualitat-preu y gaudeix de codis de descompte.</p>
+            <button class="button is-primary descargar">Descarregar Michi</button>
+            <button class="button is-primary boton-secundario">Sobre Michi &#x2192</button>
+        </div>
+        <div class="column columna2">
+            <img src="../../src/img/michi_wireframe.png" alt="wireframe" class="image wireframe">
+            <img src="../../src/img/michi_wireframe.png" alt="wireframe2" class="image wireframe2">
+        </div>
+    </section>
+
+    <br>
+    <section class="porque-michi section animacion-scroll">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h2 class="title is-2">Per què és interessant Michi?</h2>
+                    <p class="body1">Segeuix llegint per descobrir per què Michi és una app d'estalvi simple, potent i segura
+                    </p>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-two-thirds">
+                    <div class="bd-best ">
+                        <div class="bd-best-list is-inline-flex">
+                            <article class="bd-tw bd-best-item bd-is-medium">
+                                <p>Té un buscador que troba gangues</p>
+                            </article>
+                            <article class="bd-tw bd-best-item bd-is-medium">
+                                <p>Un mapa dels millos llocs segons les opinions dels usuaris.</p>
+                            </article>
+                            <div class="bd-tw bd-best-item bd-is-medium">
+                                <p>La teva opinió també compta! Valora el producte específic o l'establiment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column auto">
+                    <!-- INICIO modelo 3d rechulón -->
+                    <model-viewer src="../../src/3d/michi_v02.glb" ar ar-modes="webxr scene-viewer quick-look"
+                        camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1"
+                        camera-orbit="114.7deg 78.05deg 31.74m" field-of-view="30deg">
+                        <div class="progress-bar hide" slot="progress-bar">
+                            <div class="update-bar"></div>
+                        </div>
+                        <!-- <button slot="ar-button" id="ar-button">
+                                View in your space
+                                </button> -->
+                        <!-- <div id="ar-prompt">
+                            <img src="ar_hand_prompt.png">
+                        </div> -->
+                    </model-viewer>
+                    <script src="../../src/3d/script.js"></script>
+                    <!-- Loads <model-viewer> for browsers: -->
+                    <script type="module"
+                        src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+                    <!-- FIN modelo 3d rechulón -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="call-to-action animacion-scroll">
+        <div class="container">
+            <div class="box columns is-centerd cta">
+                <div class="column is-half">
+                    <div class="">
+                        <p class="title is-3 has-text-white titulo-cta">T'animes a probar-la?</p>
+                        <p class="subtitle is-6 mt-3 has-text-light">Descarrega ara Michi i gaudeix de totes les seves eines (i descomptes 👀)</p>
+                        <button class="button is-primary descargar">Descarregar Michi</button>
+                    </div>
+                </div>
+                <div class="column is-half imagen-cta">
+                    <figure class="image "><img src="../../src/img/Michi-con-movil.png" alt="foto_michi"></figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="caract-michi section animacion-scroll">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h2 class="title is-2">¿De qué dispone Michi?</h2>
+                    <p class="body1">Esta app contiene varias funcionalidades que te pueden ser de mucha utilidad.
+                        ¡Échales un ojo!
+                    </p>
+                </div>
+            </div>
+            <div class="columns is-centerd container cajas">
+                <div class="column cajita is-half animacion-scroll">
+                    <div class="box is-inline-flex">
+                        <div class="column is-two-fifths">
+                            <figure class="image">
+                                <img src="../../src/img/lista_prototipo.png" alt="lista_prototipo" class="foto_box">
+                            </figure>
+                        </div>
+
+                        <div class="column auto texto-centrado">
+                            <h3 class="title is-5">Comparador de precios</h3>
+                            <p>Busca en el listado qué comida te apetece según la puntuación de los usuarios.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column cajita is-half animacion-scroll">
+                    <div class="box is-inline-flex">
+                        <div class="column is-two-fifths">
+                            <figure class="image">
+                                <img src="../../src/img/mapa_prototipo.png" alt="lista_prototipo" class="foto_box">
+                            </figure>
+                        </div>
+                        <div class="column auto texto-centrado">
+                            <h3 class="title is-5">Mapa</h3>
+                            <p>Usa el mapa para localizar los restaurantes, bares y establecimientos donde ofrecen
+                                productos comestibles cerca de donde estés.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-centerd container cajas">
+                <div class="column cajita is-half animacion-scroll">
+                    <div class="box is-inline-flex">
+                        <div class="column is-two-fifths">
+                            <figure class="image">
+                                <img src="../../src/img/michibot_prototipo.png" alt="lista_prototipo" class="foto_box">
+                            </figure>
+                        </div>
+                        <div class="column auto texto-centrado">
+                            <h3 class="title is-5">Michibot</h3>
+                            <p>Habla con Michibot, nuestro robot al que le podrás preguntar distintas cosas y quien
+                                te informará de nuevas ofertas y descuentos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column cajita is-half animacion-scroll">
+                    <div class="box">
+                        <h3 class="title is-5">Cupones de descuento y packs sorpresa</h3>
+                        <p>Consigue cupones de descuento y compra packs sorpresa para aprovechar la comida que no se
+                            ha
+                            usado al final del día.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="animacion-scroll">
+        <div class="formulario mx-5">
+            <h2 class="title is-2">¿Quieres decirnos algo?</h2>
+            <h3 class="subtitle is-6 mt-4">Ponte en contacto con nosotros y te responderemos a lo largo de las proximas
+                24h
+            </h3>
+            <div class="inputs_form">
+                <div class="nombre_email columns">
+                    <div class="field column is-half">
+                        <label class="label">Nombre</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Michi Gato Feliz">
+                        </div>
+                    </div>
+                    <div class="field column auto">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="email" placeholder="hola@michi.com" value="">
+                        </div>
+                        <!-- <p class="help is-danger">This email is invalid</p> -->
+                    </div>
+                </div>
+
+
+                <div class="field">
+                    <label class="label">Mensaje</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Escribe tu mensaje o sugerencia aqui"></textarea>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-link">Enviar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p class="has-text-centered">@Copyright Michi 2024</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+    <script src="../../js/bubble-script.js"></script>
+</body>
+
+</html>
